@@ -1,0 +1,23 @@
+<!-- 模拟电力公司统计用户用电量。
+请设计一个类FamliyElecPower描述每户人家一年的用电情况，一年的12个月的每月电量都要记录。
+设计函数CalTotalEPower，计算每户一年的总电量；
+函数CalAveEPower计算每户的每月平均用电量。
+函数CalTotalEPower和函数CalAveEPower是类FamliyElecPower的友元函数。
+主程序中创建1户人家，输入这户人家1年12个月的用电量，
+然后调用函数CalTotalEPower和函数CalAveEPower分别计算并输出这家的总用电量和平均每月用电量。
+输入输出样例：
+请输入用户名称：Wang 					//带下划线的部分表示用户的输入
+请分别输入12个月的电量：89 70 56 102 112 92 90 88 75 89 86 123
+用户用电信息是：
+编号：1				名称：Wang	
+12个月的用电量：89 70 56 102 112 92 90 88 75 89 86 123
+年总电量：1072		月均电量:：89		 -->
+#include <iostream>
+using namespace std;
+class FamilyElecPower
+{
+
+};
+int main(){
+	return 0;
+}

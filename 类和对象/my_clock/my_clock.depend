@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1507625346 source:d:\dabie's_lessons\c++\课堂作业\第四章类和对象作业\my_clock\main.cpp
+	<windows.h>
+	<commctrl.h>
+	<stdio.h>
+	"resource.h"
+
+1507630721 d:\dabie's_lessons\c++\课堂作业\第四章类和对象作业\my_clock\resource.h
+
+1507630721 source:d:\dabie's_lessons\c++\课堂作业\第四章类和对象作业\my_clock\resource.rc
+	<windows.h>
+	<commctrl.h>
+	<richedit.h>
+	"resource.h"
+

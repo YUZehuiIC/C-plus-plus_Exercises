@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1511856669 source:d:\dabie's_lessons\c++\课堂作业\第七章继承与派生（2）\alarm.cpp
+	<iostream>
+	<iomanip>
+	<windows.h>
+	"clock.h"
+	"alarm.h"
+
+1511858978 d:\dabie's_lessons\c++\课堂作业\第七章继承与派生（2）\clock.h
+
+1511856839 d:\dabie's_lessons\c++\课堂作业\第七章继承与派生（2）\alarm.h
+	<iostream>
+	"clock.h"
+
+1511856732 source:d:\dabie's_lessons\c++\课堂作业\第七章继承与派生（2）\main.cpp
+	<iostream>
+	<iomanip>
+	<windows.h>
+	"clock.h"
+	"alarm.h"
+
+1511858488 source:d:\dabie's_lessons\c++\课堂作业\第七章继承与派生（2）\clock.cpp
+	<iostream>
+	<iomanip>
+	<windows.h>
+	"clock.h"
+

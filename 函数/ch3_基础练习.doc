@@ -1,0 +1,104 @@
+1.内联函数
+（1）程序填空：请在下面的“//***【space】***”标记下面，填上正确的语句。
+#include <iostream>
+using namespace std;
+inline  int sum(int x,int y)
+	{	//***【space】***
+		return x+y;
+
+}
+int main()
+{	int a,b;
+	for(int i=0;i<100;i++)
+	{	cout<<”Please input 2 ints:”;
+		cin>>a>>b;
+		cout<<a<<’+’<<b<<’=’<<sum(a,b)<<endl;
+	}
+	return 0;
+}
+（2）在（1）的程序中，标记红线的语句会被编译器替换成：a+b
+
+
+发生这种替换的原因是：函数sum是 内联函数
+
+2.函数传参
+（1）请写出下面程序的输出：
+#include <iostream>
+using namespace std;
+void fun(int x,float& y,double* z)
+{	x++;
+		y++;
+		(*z)++;
+}
+int main()
+{	int a(1);
+		float b(1.0);
+		double c(1.0);
+		cout<<”a=”<<a<<” ”<<”b=”<<b<<” ”<<”c=”<<c<<endl;
+		fun(a,b,&c);
+		cout<<”a=”<<a<<” ”<<”b=”<<b<<” ”<<”c=”<<c<<endl;
+		return 0;
+}
+
+a=1 b=1.0 c=1.0
+a=1 b=2.0 c=2.0
+
+（2）在（1）的程序中，main函数中的变量a、b、c的初值都是1，在函数fun中的操作也是相同的，为什么返回main函数后，a、b、c的值不同了？
+因为a进入函数fun中是传值变化，函数运行结束后就被销毁，所以不发生改变；b是引用传参，c是指针传参，引用传参和指针传参都是双向传递，实参也会发生改变。
+
+3.下面是比较大小的5种函数重载：当a大于b时，返回1；当a等于b时，返回0；当a小于b时，返回-1；请把这5个函数的定义补充完整。
+	int compare(int a,int b);
+	int compare(double a,double b);
+	int compare(char a,char b);
+	int compare(string a,string b);
+	int compare(char* a,char* b);		//基本字符串类型C_str
+
+	// 函数int compare(int a,int b);的定义
+	int compare(int a,int b){
+		if(a>b)
+			return 1;
+		else if(a=b)
+			return 0;
+		else
+			return -1;
+	}
+
+	// 函数int compare(double a,double b);的定义
+	int compare(double a,double b){
+		if(a>b)
+			return 1;
+		else if(a=b)
+			return 0;
+		else
+			return -1;
+	}
+
+	// 函数int compare(char a,char b);的定义
+	int compare(char a,char b){
+		if(a>b)
+			return 1;
+		else if(a=b)
+			return 0;
+		else
+			return -1;
+	}
+
+	// 函数int compare(string a,string b);的定义
+	int compare(string a,string b){
+		if(a>b)
+			return 1;
+		else if(a=b)
+			return 0;
+		else
+			return -1;
+	}
+
+	// 函数int compare(char* a,char* b);的定义
+	int compare(char* a,char* b){
+		if(a>b)
+			return 1;
+		else if(a=b)
+			return 0;
+		else
+			return -1;
+	}
